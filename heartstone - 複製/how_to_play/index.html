@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>First Lesson</title>
+        <link rel="stylesheet" href="./first_class.css" type="text/css">
+        <style>
+            /* body{
+            background-color:	#000;
+            color:	#FFD306;
+            font-size:12px;
+            text-align:center;
+            margin:0;
+            overflow:scroll;}
+            a{
+                color:#8B4513;
+                font-weight:bold;}
+            .wrapper{
+                margin:0 auto 0;
+                padding:0;
+                width:98%;
+            }
+            .header{
+                position:fixed;
+                height: 93px;
+                margin:10px 0 10px;
+                filter: opacity(80%);
+            }
+            #header_logo{
+                margin:0 auto 0;
+                width:150px;
+            }
+            #header_logo img{
+                width:150px;
+            }
+            #header_logo img:hover{
+                filter: brightness(150%);
+            }
+            .menubar{
+                background-color: rgba(0,0,0,0.5);
+                position:fixed;
+                top:110px;
+                width:100%;
+                height:50px;
+                z-index:6;
+            }
+            .menubar a{
+                color:#FFD306;
+                font-weight:bold;
+                font-size:18px;
+                text-decoration: none;
+                margin:11px 5px;
+            }
+            .menubar div{
+                display:block;
+                float:left;
+                display:flex;
+                justify-content:center;
+                width:24.5%;
+                z-index:10
+            }
+            .menubar div:hover{
+                filter: brightness(150%);
+            }
+            #menu_a>img{
+                position:relative;
+                top:6px;
+            }
+            .content video{
+                margin:10px 10% 10px;
+                z-index:1;
+            }
+            #overview,#freshman,#construct{
+                font-size: 36px;
+                color:#FFD306;
+                margin:50px auto 30px;
+                font-weight: bold;
+            }
+            .user_screen img{
+                margin:5px auto 5px;
+            }
+            .user_screen h3,#lesson h3,#first_set h3{
+                font-weight: bold;
+                color:#8B4513;
+                font-size: 24px;
+                text-align: left;
+                margin:12px 0 10px 0;
+            }
+            #card,#hero,#ability,#magic,#weapons,#guy,#enemy,#lesson,#first_set{
+                background-color: #fff;
+                font-size: 16px;
+                color:#CD853F;
+                margin:2px 15%;
+                border-color: #000;
+                border-style: double;
+                padding:0 20px 0 30px;
+                word-break: normal;
+                text-align: left;
+            }
+            #lesson ul,#lesson ol{
+                margin:0
+            }
+            #lesson dt{
+                font-weight: bold;
+            }
+            .footer{
+                position:relative;
+                top:100px;
+                text-align: center;
+            }
+            #footer{
+                background-image: url(../img/menu_background.jpg);
+                width:100%;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="wrapper" style="background-color: #003377">
+            <div class="header" style="background-color: #483D8B; height:70px; width:100%">
+                <div id="header_logo"><a href="../index.html"><img src="../img/LOGO.png"></a></div>
+            </div>
+            <div class="menubar">
+                <div id="menu_a"><img src="../img/menu_introduction.png" width="30px" height="34px"><a href="#introduction">介紹</a></div>
+                <div id="menu_b"><img src="../img/menu_overview_1.png" width="40px"><a href="#overview">牌桌總攬</a></div>
+                <div id="menu_c"><img src="../img/menu_innkeeper-lessons.png" width="40px"><a href="#freshman">新手教學</a></div>
+                <div id="menu_d"><img src="../img/menu_build-a-deck.png" width="40px"><a href="#construct">構築第一副牌</a></div>
+            </div>
+            <div class="content">
+                <!-- <div id="introduction">
+                    <video src="../video/introduction.mp4" width="80%" autoplay poster="../img/introduction_poster.png"></video>
+                </div> -->
+                <div class="user_screen">
+                    <div id="overview"><b>牌桌總覽</b></div>
+                    <img src="../img/user_screen.jpg" width="80%">
+                    <img src="../img/screen_1st.jpg" width="70%">
+                    <div id="card">
+                        <h3>你的手牌</h3>
+                        <p>你每個回合都會從套牌裡抽出一張牌並放入手中。如果卡牌的框框出現綠色光芒，
+                            代表你可以立刻打出這張卡牌；如果卡牌的框框發出黃色光芒，代表你在打出這張卡牌
+                            時可以發動奇特出效果；如果卡牌的框框沒有光芒，則代表你目前還無法打出這張牌。<br>
+                            <strong>你最多可以擁有10張手牌</strong>。</p>
+                    </div>
+                    <img src="../img/screen_2ed.jpg" width="70%">
+                    <div id="hero">
+                        <h3>你的英雄</h3>
+                        <p>英雄頭像框的左下角會顯示出傷害值，也就是你使用武器直接發動攻擊時的殺傷力。右下角的部分則是你目前的生命值。當生命歸零時，你就輸了。</p>
+                    </div>
+                    <img src="../img/screen_3rd.jpg" width="70%">
+                    <div id="ability">
+                        <h3>你的英雄能力</h3>
+                        <p>右邊圓形框內顯示的是你的英雄能力。每個職業都擁有各自專屬的英雄能力，英雄能力每個回合都可以使用一次。
+                        </p>
+                    </div>
+                    <img src="../img/screen_4th.jpg" width="70%">
+                    <div id="magic">
+                    <h3>你的法力水晶</h3>
+                    <p>打出卡牌需要消耗法力，法力會以法力水晶的形式呈現出來。你的法力會在每個回合開始時開始補滿，而且每一回合都會額外獲得一顆法力水晶(最多累積到10顆)。</p>
+                    </div>
+                    <img src="../img/screen_5th.jpg" width="70%">
+                    <div id="weapons">
+                        <h3>你的武器</h3>
+                        <p>左邊圓形框內顯示的是你的武器。武器的攻擊力顯示在左下角。每當你使用武器發動攻擊時，右下角的武器耐久度都會下降一點，直到武器損毀並消失為止。請善用武器的攻擊次數!</p>
+                    </div>
+                    <img src="../img/screen_6th.jpg" width="70%">
+                    <div id="guy">
+                        <h3>你的手下</h3>
+                        <p>這些是你的手下。在打出手下之後，你可以操控手下攻擊對方的英雄或手下。手下需要先經過一個回合的準備才有辦法攻擊，而且你最多只能同時召喚7個手下到場上。</p>
+                    </div>
+                    <img src="../img/screen_7th.jpg" width="70%">
+                    <div id="enemy">
+                        <h3>敵方英雄</h3>
+                        <p>這個就是你的敵人。使用手下和法術削減對方的生命值，直到這個英雄的生命值歸零為止。</p>
+                    </div>
+                </div>
+                <div class="freshman">
+                    <div id="freshman"><b>新手教學</b></div>
+                    <div id="lesson">
+                        <h3>認識卡牌</h3>
+                        <p>爐石戰記的卡牌大致上可被分為手下、法術和武器三種類型。你也會發現部分卡牌的效果很直接(造成6點傷害)，
+                            其他卡牌則是擁有特殊的效果和觸發條件。我們一起來看看其中幾張效果的卡片，並學習如何結合各個卡牌的效果，
+                            華麗地掃除對手場上的陣容。</p>
+                        <dl>
+                            <dt>持續性效果</dt>
+                            <dd>部分手下擁有持續性效果，只要該手下還在場上，該持續性效果就有效。舉例來說:團隊隊長能夠賦予你的其他手下+1攻擊力；小龍鷹擁有風怒關鍵字，每個回合都能攻擊兩次。</dd>
+                            <dt>觸發型效果</dt> 
+                            <dd>這種卡牌的效果需要滿足特定條件才能夠發動。舉幾個觸發型效果的例子:
+                                <ul>
+                                    <li>戰吼:當手下從你的手牌中被打到場上時，該手下會發動自身的戰吼效果</li>
+                                    <li>秘密:在對手的回合，只要滿足特定條件，秘密(法術)就會被觸發</li>
+                                    <li>死亡之聲:手下的死亡之聲會在該手下死亡時發動</li>
+                                    <li>持續性效果:卡牌會賦予持續性效果，只要目標還在場上，效果就不會消失(除非目標遭到沉默，沉默會移除持續性效果)</li>
+                                </ul>
+                            </dd>  
+                            <dt>組合</dt> 
+                            <dd>某些卡牌的效果可以互相組合搭配，藉此發動毀天滅地的威力。舉例來說:
+                                <ol type="1">
+                                    <li>[小飛鷹]擁有1點攻擊力和風怒關鍵字，可以幫你的對手搔癢兩次；但如果搭配[力量祝福]，這隻弱不禁風的小小龍鷹就能變身成銳不可擋的巨龍</li>
+                                    <li>打出[瘋狂炸彈客]這張卡牌有其風險，因為他有可能是對你造成傷害，而不是對敵人造成傷害。不過若你場上有[苦痛侍僧]或[古拉巴什狂戰士]等卡牌，那麼炸彈客的這種不穩定的特質反而會變成一種優勢</li>
+                                    <li>[飛刀手]光是單槍匹馬就足以令對手心生壓力；如果再搭配[紫羅蘭教師]或[小鬼召喚師]這種手下的話，還能讓對手更加措手不及</li>
+                                </ol>
+                                </dd>             
+                        </dl>
+                        <h3>幾個實用的小祕訣</h3>
+                        <dl>
+                            <dt>不要把增益效果都放在同一個籃子</dt>
+                            <dd>增益效果卡牌很強大，但如果套牌中滿滿都是增益效果的卡牌，手下卻沒幾個，那麼八成會死得很難看。同理，若將增益效果都投資在同一個手下，對方很可能毀使用法術把這個手下從牌桌上移除，導致你血本無歸</dd>
+                            <dt>不要浪費傷害</dt>
+                            <dd>在第一回合就施放[祕法飛彈]並對對手造成3點傷害，在絕大多數的情況下都是浪費卡牌的行為。建議你靜待適當的時機做出優勢交換並創造卡牌的最大價值</dd>
+                            <dt>建築套牌時，花招不宜太多</dt>
+                            <dd>如果你在套牌中加入太多特殊的組合，屆時在對戰中很有可能會抽不齊可以互相搭配的卡牌。建議擬改以少少幾個厲害的卡牌連技和強大的整體策略為核心來構築套牌。我們會在｢構築第一副套牌｣段落中深入介紹優質套牌所具備的特色</dd>
+                            <dt>不要慌，慢慢來</dt>
+                            <dd>你總共有90秒的時間可以行動。不要慌，靜下心來慢慢思考怎麼做，想清楚之後再打牌。說不定你會因此發現本來沒有想到的超讚打法</dd>
+                            <dt>卡牌不要留在手裡太久</dt>
+                            <dd>剛有提到不要一下子把有增益效果的卡牌出光，也不要隨便浪費法術；但我也不建議你一直把卡牌留在手上都不使用。如果當下有法術或手下能幫你爭取到優勢，就趕快行動吧!
+                                隨時留意對手的生命值</dd>
+                        </dl>
+                        <h3>卡牌優勢</h3>
+                        <p>卡牌優勢就是你還有沒有辦法繼續打出卡牌。你的手牌越多，就越有機會去應對對手所發動的攻勢，讓卡牌發揮自身最大的價值；所以說，
+                            手牌越多，卡牌優勢就越大。同理在牌桌上擁有多名手下，也是卡牌優勢的一種。如果你的手牌比對手多，你就更有能力可以運用各種卡牌效果，
+                            發揮卡牌的最大效益。在爐石戰記中，玩家主要利用擁有抽牌效果的卡牌(例如說[祕法智力]這樣的卡牌，或是[加基森拍賣師]這類手下)來創造
+                            並保有卡牌優勢。</p>
+                        <dl>
+                            <dt>不要一口氣把手牌全打出去</dt>
+                            <dd>出牌的時候，只要保持領先的程度就可以了，不要把手牌全部出完。除非你非常確定你可以贏得勝利，否則請盡量避免一口氣把手牌全部出完這種作法</dd>
+                            <dt>做出優勢交換</dt>
+                            <dd>仔細思考，把你的法術和手下當成棋盤中的棋子，找到最划算的交換方式。如果你得犧牲三個才能換到對手的一個棋子，就不好的交換方式。
+                                同理，如果你能用一張卡片換掉對手的三個手下，那這就是個划算的交換方式</dd>
+                            <dt>善用抽牌效果</dt>
+                            <dd>在你的套牌裡加入幾個有抽牌效果的卡牌吧，這樣一來，你就可以在打出卡牌與抽牌這兩件事情之間取得平衡</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="construct">
+                    <div id="construct">構築第一副牌</div>
+                    <div id="first_set">
+                        <h3>選擇核心打法</h3>
+                        <p>你對什麼樣的玩法感興趣？你希望套牌能夠發揮什麼樣的功能？有主攻透過野獸和增益效果鋪場的獵人套牌，也有使用狡詐秘密的法師套牌；但不論你的喜好為何，都建議你在開始構築套牌之前，心中先有一個初步的想法。</p>
+                        <p>在想好套牌主題之後，接著要思考的是遊戲策略。你可以在前幾個回合就把手中的全部手下都召喚到場上，然後祈禱對手沒有辦法解場。你也可以採取不斷解場的戰術，跟對手周旋到你把關鍵卡牌通通收集齊全並發動強大組合技的那個時候。</p>
+                        <h3>新增核心卡牌</h3>
+                        <p>先想好你要透過什麼方式來戰勝對手，然後從職業法術和職業手下開始，慢慢構築出你的套牌主題，最後再挑選中立手下。我們用稍早的例子來說明：假設是一副主攻野獸的獵人套牌，你需要思考哪些卡牌最能夠跟你的策略搭配，
+                            我建議你使用大量低法力消耗的野獸鋪場，並以人數優勢擊垮對手。有幾張卡牌幾乎是必選的，例如：[放狗]、[動物夥伴]和[森林狼]，
+                            但你也可以考慮放入法術或武器，這樣才能夠支撐到遊戲中後期，並看到自己的策略戰術開花結果。</p>
+                        <h3>新增輔助卡牌</h3>
+                        <p>現在你的套牌已經完備，能夠發揮套牌主題的特色與優勢並取得勝利，是時候加入幾張輔助卡牌了。所謂的輔助卡牌，指的是跟套牌主題沒有直接相關的卡牌與法術，
+                            但能夠幫助你抽到關鍵卡牌、抵擋對手的攻勢、反制天梯環境中的主流套牌、或是提供你第二個備用的致勝方法。舉幾個例子說明：你可以放入[酸性沼澤軟泥怪]，
+                            藉此來反制以武器為主的套牌；你也可以加入[地精發明家]，幫助你抽到最關鍵的那張卡牌；或是放入[死亡之翼]，讓你能夠在絕境中看見一絲希望的曙光。</p>
+                        <h3>調整法力曲線</h3>
+                        <p>閱讀到這裡，你的套牌大概已經塞滿卡牌沒有剩餘空間了，但是別擔心！接下來我們要開始編輯套牌，我最推薦的其中一種做法，就是從套牌的「法力曲線」著手進行調整。
+                             如果把卡牌按照法力消耗高低來排序並分組，那麼法力曲線就會是套牌的形狀（通常是鐘形曲線）。快攻套牌通常會包括很多低法力消耗的卡牌，所以法力曲線會偏向前方
+                             （左方）。後期套牌的法力曲線分布則是相對比較平均，以低法力消耗和普通法力消耗的卡牌為主，並搭配幾張法力消耗很高的卡牌，作為戰勝對手的關鍵手段。
+                             思考看看使用套牌致勝的策略是什麼，然後不斷編輯套牌裡面的卡牌，直到法力曲線看起來很理想為止</p>
+                        <h3>實戰與編輯</h3>
+                        <p>在對戰的過程中，你會發現某幾張卡牌的數量太多、某幾張卡牌的數量則太少。或是你也有可能會發現自己老是遇到使用類似套牌的對手，導致你必須對套牌做出調整，
+                            以因應這種類型的對手。在反覆經過實戰與編輯這樣的過程好幾次之後，你自己精心組出來的套牌應該就會臻至完美了。<br>
+                            祝好運。我們很期待看看你的創意和成果！
+                            </p>
+                        <h3>使用智慧套牌小幫手</h3>
+                        <p>雖然構築套牌的過程非常有趣而且成就感十足，但也需要耗費不少時間與心力。如果你只想要好好休息，構築套牌的事情由我們代勞的話，
+                            《爐石戰記》有內建的相關功能，可以依照目前的遊戲主流玩法以及你的牌庫收藏，幫你打造最厲害的套牌。<br>
+                            智慧套牌小幫手使用方式：使用任一職業建立套牌，並放入任何數量的卡牌。在點選「補完我的套牌」或是「完成」之後，
+                            智慧套牌小幫手會依照你已經加進套牌裡的卡牌，從你既有的牌庫中挑選出合適的卡牌來補滿你的套牌。這邊舉個例子說明套牌自動完成的方式：
+                            假設你選擇的是獵人套牌，並手動放入了[[長鬃草原獅]]和[[裝死]]這兩張卡牌，那麼智慧套牌小幫手可能會幫你構築一副以死亡之聲為主題的套牌。<br>
+                        <p>更多有關智慧套牌小幫手運作方式的資訊，請參考我們的<a href="https://hearthstone.blizzard.com/zh-tw/news/22938500">部落格文章</a></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div id="footer"><p>©2023 美商暴雪娛樂股份有限公司（Blizzard Entertainment, Inc.）版權所有。<br>
+                    在此提及的所有 商標 是其各自所有人的財產。<br>
+                    香港商動視暴雪有限公司台灣分公司 28992446
+                </p></div>
+                <div><img src="../img/footer.png"></div>
+            </div>
+        </div>
+    </body>
+</html>

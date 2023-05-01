@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>application</title>
+        <style>
+            body{
+                background-color: #880000;
+            }
+            .header{
+                background-color: #502800;
+                height: 50px;
+                width:100%;
+                position:relative;
+                top: 10px;
+                margin:0;}
+            .header img{
+                    margin:0 auto 0;
+                    display:block;
+                }
+            .header img:hover{
+                filter:brightness(150%);
+            }
+            #introduction{
+                color:#fff;
+                font-size: 16px;
+                text-align: center;
+                width:85%;
+                display: block;
+                margin: 0 auto 0;
+            }
+            #form{
+                display: block;
+                margin: 30px auto 0;
+                width:85%;
+                background-color: #FFB5B5;
+                padding:5px 8px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="../index.html"><img src="../img/LOGO.png" width="110px"></a>
+        </div>
+        <div class="content">
+            <div id="introduction">
+                <p>《爐石戰記》2023 年世界冠軍賽即將隆重登場！從 7 月 17 日禮拜五開始，來自世界各地的《爐石戰記》玩家將會進行激烈對決，並決定誰會帶走 $100,000 美元的首獎獎金。</p>
+                <p>若您對《爐石戰記》競賽對決有興趣，歡迎在下列表單中填寫資料，我們將挑出各地區遊戲帳號排名前50名寄發參賽函。報名只到5月30日。</p>
+            </div>
+            <div id="form">
+                <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" method="post">
+                    <p>姓名
+                    <input type="text" name="name" maxlength="10">
+                    </p>
+                    <p>年齡
+                    <input type="number" name="age">
+                    </p>
+                    <p>性別
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">女性</label>
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">男性</label>
+                    </p>
+                    <p>帳號
+                    <input type="email" name="account" value="jaja@gmail.com" required>
+                    </p>
+                    <P>密碼
+                    <input type="password" name="password" required>
+                    </P>
+                    <p>報名地區
+                    <select name="area">
+                        <option>亞太地區</option>
+                        <option>歐洲地區</option>
+                        <option>美洲地區</option>
+                    </select>
+                    </p>
+                    <input type="submit" name="submit" value="提交">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

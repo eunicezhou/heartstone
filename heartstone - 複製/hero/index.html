@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hero</title>
+        <link rel="stylesheet" href="./hero.css">
+            <!-- <style>
+            body{
+                background-color:	#2F0000;
+                color:#fff;
+            }
+            .header{
+                background-color: #502800;
+                height: 50px;
+                width:100%;
+                position:fixed;
+                top: 10px;
+                margin:0;
+                z-index:10;
+                filter:opacity(70%);
+                -webkit-filter: opacity(70%);
+            }
+            #header_logo{
+                margin:0 auto 0;
+                width:110px; 
+            }
+            #header_logo:hover{
+                filter:brightness(150%);
+            }
+            .content{
+                z-index:6;
+            }
+            #title{
+                text-align: center;
+                position:relative;
+                top:70px;
+                font-size: 36px;
+            }
+            #title+p{
+                width:90%;
+                text-align: center;
+                position:relative;
+                top:50px;
+                margin:16px auto 16px;
+            }
+            table{
+                width:90%;
+                position:relative;
+                top:60px;
+                margin:0 auto;
+            }
+            #introduce .character{
+                width:20%;
+                text-align: center;
+            }
+            #introduce .power{
+                width:60%;
+                text-align: left;
+            }
+            .footer{
+                position:relative;
+                top:100px;
+                text-align: center;
+            }
+            #footer{
+                background-image: url(../img/menu_background.jpg);
+                width:100%;
+            }
+        </style> -->
+    </head>
+    <body>
+        <div class="header">
+            <div id="header_logo">
+            <a href="../index.html"><img src="../img/LOGO.png" width="110px"></a></div>
+        </div>
+        <div class="content">
+            <h1 id="title"><b>《爐石戰記》英雄</b></h1>
+            <p>每個《爐石戰記》英雄都有獨特的英雄能力和各自的職業專屬卡牌。閱讀本章節，了解更多關於英雄獨特玩法的資訊。您可以在練習模式中擊敗這些英雄來解鎖他們。</p>
+        </div>
+        <div id="introduce">
+            <table cellpadding="10px">
+                <tr>
+                    <td class="character"><img src="../img/hero/炎魔 拉格納羅斯.png"><br>
+                    拉格納羅斯</td>
+                    <td class="power"><img src="../img/hero/炎魔 拉格納羅斯-技能.png"><br>
+                        解完時，會獲得每回合結束時，對最左邊跟最右邊的手下+3/3</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/伊利丹 怒風.png"><br>
+                    伊利丹。怒風</td>
+                    <td class="power"><img src="../img/hero/伊利丹 怒風-技能.png"><br>
+                        最左邊的手下會優先攻擊才換最右邊，若最左邊手下攻擊後未死亡則會再攻擊一次</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/伊瑟拉.png"><br>
+                    伊瑟拉</td>
+                    <td class="power"><img src="../img/hero/伊瑟拉-技能.png"><br>
+                    每次刷牌時都會額外給一條龍，並且這回合就算冰起來，下回合還是會額外給一條龍</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/賽佛瑞斯.png"><br>
+                    賽佛瑞斯</td>
+                    <td class="power"><img src="../img/hero/賽佛瑞斯-技能.png"><br>
+                    無分優先度，為隨機合成</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/拉多拉船長.png"><br>
+                    拉多拉船長</td>
+                    <td class="power"><img src="../img/hero/拉多拉船長-技能.png"><br>
+                    無分優先度，為隨機合成</td>
+                </tr>
+                <!-- <tr>
+                    <td class="character"><img src="../img/hero/巫妖王.png"><br>
+                    巫妖王</td>
+                    <td class="power"><img src="../img/hero/巫妖王-技能.png"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/巴羅夫領主.png"><br>
+                    巴羅夫領主</td>
+                    <td class="power"><img src="../img/hero/巴羅夫領主-技能.png"><br>
+                        若猜的兩個玩家為平手，則返還1金幣。如果剩餘玩家為奇數，則有機率猜到玩家vs死人。而剩餘兩位玩家，則會自己vs對手<br>
+                        ps:只有剩餘兩位玩家才能猜自己
+                        </td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/泰斯 葛雷邁恩.png"><br>
+                    泰斯。葛雷邁恩</td>
+                    <td class="power"><img src="../img/hero/泰斯 葛雷邁恩-技能.png"><br>
+                    重置的陣容為未強化過的</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/極盜天王拉法姆.png"><br>
+                    極盜天王<br>
+                    拉法姆</td>
+                    <td class="power"><img src="../img/hero/極盜天王拉法姆-技能.png"><br>
+                    無分優先度，為隨機合成</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/無限托奇.png"><br>
+                    無限托奇</td>
+                    <td class="power"><img src="../img/hero/無限托奇-技能.png"><br>
+                        刷新保底1個手下為高星級手下，即原本若為每刷給4個手下，此能力為原本的3個手下加額外的1個高星級手下</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/畢勾沃斯先生.png"><br>
+                    畢勾沃斯先生</td>
+                     <td class="power"><img src="../img/hero/畢勾沃斯先生-技能.png"><br>
+                    隨機發現3張死亡玩家的手下陣容，金卡跟體質都會被保留下來
+                    <br>ps:觸發能力後會會提早燒線但實際上還有剩餘幾十秒
+                        </td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/穆克拉.png"><br>
+                    穆克拉</td>
+                    <td class="power"><img src="../img/hero/穆克拉-技能.png"><br>
+                    香蕉為+1/1，有50%機率給自己大香蕉+2/2</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/米歐浩斯 曼納斯頓.png"><br>
+                    米歐浩斯。曼納斯頓</td>
+                    <td class="power"><img src="../img/hero/米歐浩斯 曼納斯頓-技能.png"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/芬利 莫戈頓爵士.png"><br>
+                    芬利。莫戈頓爵士 </td>
+                    <td class="power"><img src="../img/hero/芬利 莫戈頓爵士-技能.png"><br>
+                        會先在回合刷出牌後開始選能力，故可以看場上的怪選擇有力的能力</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/詹迪斯 巴羅夫.png"><br>
+                    詹迪斯。巴羅夫</td>
+                    <td class="power"><img src="../img/hero/詹迪斯 巴羅夫-技能.png"><br>
+                    交換後依然會保留該手下的體質</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/里諾 傑克森.png"><br>
+                    里諾。傑克森</td>
+                    <td class="power"><img src="../img/hero/里諾 傑克森-技能.png"><br>
+                        點金的手下不會額外扣除牌池，即6星牌池只有7張，點金不會變成4張</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/館長.png"><br>
+                    館長</td>
+                    <td class="power"><img src="../img/hero/館長-技能.png"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/哮斗龍.png"><br>
+                    哮斗龍</td>
+                    <td class="power"><img src="../img/hero/哮斗龍-技能.png"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/雅立史卓莎.png"><br>
+                    雅立史卓莎</td>
+                    <td class="power"><img src="../img/hero/雅立史卓莎-技能.png"><br>
+                    可以發現6星龍</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/真菌術師 弗勒戈.png"><br>
+                    真菌術師<br>
+                    弗勒戈</td>
+                    <td class="power"><img src="../img/hero/真菌術師 弗勒戈-技能.png"><br>
+                    給的是當前旅店等級以下的魚人</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/里諾 傑克森.png"><br>
+                    瑪翼夫。影歌</td>
+                    <td class="power"><img src="../img/hero/里諾 傑克森-技能.png"><br>
+                    若旅店1刷為出現4個手下，即使使用能力依然為刷出4個手下，但是因旅店只能放7個手下的機制，在1刷為6個手下的情況下，使用超過2次能力的話，會造成每刷少看1張牌的情況</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/詹莉 伊夏.png"><br>
+                    詹莉。伊夏</td>
+                    <td class="power"><img src="../img/hero/詹莉 伊夏-技能.png"><br>
+                    跳過2回合，即無法購買手下也無法升級，在第3回合時會給2張0塊發現3星手下，同時該回合擁有5塊金幣以及3塊升級成2星旅店。雖然無法購買手下及升級，但是旅店每回合依然會刷出手下，且也可以冰凍</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/希拉斯 暗月.png"><br>
+                    希拉斯。暗月</td>
+                    <td class="power"><img src="../img/hero/希拉斯 暗月-技能.png"><br>
+                    旅店手下會隨機在上方出現獎品券的特效，購買可獲得獎品券，擁有獎品券的旅店手下可冰起來保留到下回合</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/亞煞拉懼.png"><br>
+                    亞煞拉懼</td>
+                    <td class="power"><img src="../img/hero/亞煞拉懼-技能.png"><br>
+                    滿場時，不會觸發效果</td>
+                </tr>
+                <tr>
+                    <td class="character"><img src="../img/hero/魔術大師 阿卡贊扎拉克.png"><br>
+                    魔法大師<br>
+                    阿卡贊扎拉客</td>
+                    <td class="power"><img src="../img/hero/魔術大師 阿卡贊扎拉克-技能.png"><br>
+                    </td>
+                </tr> -->
+            </table>
+        </div>
+        <div class="footer">
+            <div id="footer"><p>©2023 美商暴雪娛樂股份有限公司（Blizzard Entertainment, Inc.）版權所有。<br>
+                在此提及的所有 商標 是其各自所有人的財產。<br>
+                香港商動視暴雪有限公司台灣分公司 28992446
+            </p></div>
+            <div><img src="../img/footer.png"></div>
+        </div>
+    </body>
+</html>

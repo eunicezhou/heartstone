@@ -1,0 +1,107 @@
+body{
+    background-color:	#000;
+    color:	#FFD306;
+    font-size:12px;
+    text-align:center;
+    margin:0;
+    overflow:scroll;}
+    a{
+        color:#8B4513;
+        font-weight:bold;}
+    .wrapper{
+        margin:0 auto 0;
+        padding:0;
+        width:98%;
+    }
+    .header{
+        position:fixed;
+        height: 93px;
+        margin:10px 0 10px;
+        filter: opacity(80%);
+    }
+    #header_logo{
+        margin:0 auto 0;
+        width:150px;
+    }
+    #header_logo img{
+        width:150px;
+    }
+    #header_logo img:hover{
+        filter: brightness(150%);
+    }
+    .menubar{
+        background-color: rgba(0,0,0,0.5);
+        position:fixed;
+        top:110px;
+        width:100%;
+        height:50px;
+        z-index:6;
+    }
+    .menubar a{
+        color:#FFD306;
+        font-weight:bold;
+        font-size:18px;
+        text-decoration: none;
+        margin:11px 5px;
+    }
+    .menubar div{
+        display:block;
+        float:left;
+        display:flex;
+        justify-content:center;
+        width:24.5%;
+        z-index:10
+    }
+    .menubar div:hover{
+        filter: brightness(150%);
+    }
+    #menu_a>img{
+        position:relative;
+        top:6px;
+    }
+    .content video{
+        margin:10px 10% 10px;
+        z-index:1;
+    }
+    #overview,#freshman,#construct{
+        font-size: 36px;
+        color:#FFD306;
+        margin:50px auto 30px;
+        font-weight: bold;
+    }
+    .user_screen img{
+        margin:5px auto 5px;
+    }
+    .user_screen h3,#lesson h3,#first_set h3{
+        font-weight: bold;
+        color:#8B4513;
+        font-size: 24px;
+        text-align: left;
+        margin:12px 0 10px 0;
+    }
+    #card,#hero,#ability,#magic,#weapons,#guy,#enemy,#lesson,#first_set{
+        background-color: #fff;
+        font-size: 16px;
+        color:#CD853F;
+        margin:2px 15%;
+        border-color: #000;
+        border-style: double;
+        padding:0 20px 0 30px;
+        word-break: normal;
+        text-align: left;
+    }
+    #lesson ul,#lesson ol{
+        margin:0
+    }
+    #lesson dt{
+        font-weight: bold;
+    }
+    .footer{
+        position:relative;
+        top:100px;
+        text-align: center;
+    }
+    #footer{
+        background-image: url(../img/menu_background.jpg);
+        width:100%;
+    }
